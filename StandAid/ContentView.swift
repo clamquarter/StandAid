@@ -10,8 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
      HomeView()
+        //The HomeView screen contains the navigation for the app
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
