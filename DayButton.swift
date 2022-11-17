@@ -8,15 +8,57 @@
 import SwiftUI
 
 struct DayButton: View {
-    @State var buttonText = Image(systemName: "c.circle")
-    @State var daySelect = false
-
+    @State var daySelected = false
+     @State var colorLetterDay = Color.blue
+    var buttonText = "s"
+    var fontSize = 50
     var body: some View {
-        
-        Button ( action: {
-            daySelect = true
-        }, Image: )
+             Button ( action: {
+                 daySelected.toggle()
+                 
+                 if daySelected{
+                     colorLetterDay = .gray
+                     
+                 } else {
+                     colorLetterDay = .blue
+                     
+                     
+                 }
+             })
+             {
+
+                 if daySelected{
+                     Image(systemName: "\(buttonText).circle.fill")
+                         .font(.system(size: 35))
+                         
+                     
+                     
+                     
+                 }
+                 else{
+                     
+                     Image(systemName: "\(buttonText).circle").tint(.gray)
+                         .font(.system(size: 35))
+                         
+                     
+                 }
+                 
+                 
+             }
+             
+//        Toggle(isOn: $daySelect) {
+//            Image(systemName: buttonText)
+//                .font(.system(size: 36))
+//
+//        }.toggleStyle(.button)
+//            .clipShape(Circle())
+//        Toggle {
+//            print("Edit button was tapped")
+//        } label: {
+//            I
+//        }.toggleStyle(.button)
     }
+    
 }
 
 struct DayButton_Previews: PreviewProvider {

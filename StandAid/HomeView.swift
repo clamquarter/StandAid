@@ -30,11 +30,11 @@ struct HomeView: View {
             
             ScrollView{
                 Text("Settings and Such:").font(.title)
-                
-
-                DatePicker("From", selection: $currentDate, displayedComponents: .hourAndMinute)
-                DatePicker("To", selection: $currentDate, displayedComponents: .hourAndMinute)
-               
+                VStack{
+                    DayPicker()
+                    DatePicker("From", selection: $currentDate, displayedComponents: .hourAndMinute)
+                    DatePicker("To", selection: $currentDate, displayedComponents: .hourAndMinute)
+                }
             }
         }
     }

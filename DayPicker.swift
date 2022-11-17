@@ -13,20 +13,15 @@ struct DayPicker: View {
         ZStack{
             RoundedRectangle(cornerRadius: 25, style: .continuous)
                            .fill(.black)
-                           .frame(width: 360, height: 50)
+                           .frame(width: 380, height: 50)
             HStack{
-                DayButton(buttonText: Image(systemName: "c.circle"))
-//                DayButton(buttonText: "M")
-//                DayButton(buttonText: "Tu")
-//                DayButton(buttonText: "W")
-//                DayButton(buttonText: "Th")
-//                DayButton(buttonText: "F")
-//                DayButton(buttonText: "Sa")
-
-//                Toggle("M", isOn: $DaySelect)
-//                    .toggleStyle(.button)
-//                    .tint(.pink)
-//                    .clipShape(Circle())
+                DayButton(buttonText: "s")
+                DayButton(buttonText: "m")
+                DayButton(buttonText: "t")
+                DayButton(buttonText: "w")
+                DayButton(buttonText: "t")
+                DayButton(buttonText: "f")
+                DayButton(buttonText: "s")
             }
         }
         
