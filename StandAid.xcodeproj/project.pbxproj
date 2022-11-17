@@ -43,8 +43,6 @@
 		13DBF0582922DE5D003F6803 = {
 			isa = PBXGroup;
 			children = (
-				13DBF07A29243E16003F6803 /* DayButton.swift */,
-				13DBF07829242131003F6803 /* DayPicker.swift */,
 				13DBF0632922DE5D003F6803 /* StandAid */,
 				13DBF0622922DE5D003F6803 /* Products */,
 			);
@@ -61,6 +59,8 @@
 		13DBF0632922DE5D003F6803 /* StandAid */ = {
 			isa = PBXGroup;
 			children = (
+				13DBF07A29243E16003F6803 /* DayButton.swift */,
+				13DBF07829242131003F6803 /* DayPicker.swift */,
 				13DBF0642922DE5D003F6803 /* StandAidApp.swift */,
 				13DBF0662922DE5D003F6803 /* ContentView.swift */,
 				13DBF0682922DE5D003F6803 /* Assets.xcassets */,

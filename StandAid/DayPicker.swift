@@ -13,7 +13,7 @@ struct DayPicker: View {
         ZStack{
             RoundedRectangle(cornerRadius: 25, style: .continuous)
                            .fill(.black)
-                           .frame(width: 380, height: 50
+                           .frame(width: 380, height: 50)
                                   //
             HStack{
                 DayButton(buttonText: "s")
