@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DayButton: View {
+struct PickerButton: View {
     @Binding var customColor: Color
     @State var daySelected = false
     // @State var colorLetterDay = Color.blue

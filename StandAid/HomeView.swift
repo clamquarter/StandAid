@@ -33,7 +33,7 @@ struct HomeView: View {
             ScrollView{
                 Text("Settings and Such:").font(.title)
                 VStack{
-                    DayPicker(customColor: $mainColor)
+                    MultiPicker(customColor: $mainColor)
                     DatePicker("From", selection: $currentDate, displayedComponents: .hourAndMinute)
                     DatePicker("To", selection: $currentDate, displayedComponents: .hourAndMinute)
                 }

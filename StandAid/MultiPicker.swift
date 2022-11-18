@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DayPicker: View {
+struct MultiPicker: View {
     @Binding var customColor: Color
 
     var body: some View {
@@ -17,13 +17,13 @@ struct DayPicker: View {
                            .frame(width: 380, height: 50)
                                   
             HStack{
-                DayButton(customColor: $customColor, buttonText: "s")
-                DayButton(customColor: $customColor,buttonText: "m")
-                DayButton(customColor: $customColor,buttonText: "t")
-                DayButton(customColor: $customColor,buttonText: "w")
-                DayButton(customColor: $customColor,buttonText: "t")
-                DayButton(customColor: $customColor,buttonText: "f")
-                DayButton(customColor: $customColor,buttonText: "s")
+                PickerButton(customColor: $customColor, buttonText: "s")
+                PickerButton(customColor: $customColor,buttonText: "m")
+                PickerButton(customColor: $customColor,buttonText: "t")
+                PickerButton(customColor: $customColor,buttonText: "w")
+                PickerButton(customColor: $customColor,buttonText: "t")
+                PickerButton(customColor: $customColor,buttonText: "f")
+                PickerButton(customColor: $customColor,buttonText: "s")
             }
         }
         
