@@ -8,36 +8,33 @@
 import SwiftUI
 
 struct DayButton: View {
+    @Binding var customColor: Color
     @State var daySelected = false
-     @State var colorLetterDay = Color.blue
+    // @State var colorLetterDay = Color.blue
     var buttonText = "s"
     var fontSize = 50
     var body: some View {
              Button ( action: {
                  daySelected.toggle()
                  
-                 if daySelected{
-                     colorLetterDay = .gray
-                     
-                 } else {
-                     colorLetterDay = .blue
-                     
-                     
-                 }
+//                 if daySelected{
+//                     customColor = .pink
+//                
+//                 } else {
+//                     customColor = .gray
+//                     
+//                 }
              })
              {
 
                  if daySelected{
-                     Image(systemName: "\(buttonText).circle.fill")
+                     Image(systemName: "\(buttonText).circle.fill").tint(customColor)
                          .font(.system(size: 35))
-                         
-                     
-                     
-                     
+                
                  }
                  else{
                      
-                     Image(systemName: "\(buttonText).circle").tint(.gray)
+                     Image(systemName: "\(buttonText).circle").tint(customColor)
                          .font(.system(size: 35))
                          
                      
@@ -61,8 +58,8 @@ struct DayButton: View {
     
 }
 
-struct DayButton_Previews: PreviewProvider {
-    static var previews: some View {
-        DayButton()
-    }
-}
+//struct DayButton_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DayButton()
+//    }
+//}

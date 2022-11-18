@@ -8,7 +8,10 @@
 import SwiftUI
 import Charts
 
+var testColor = Color.blue
+
 struct CarouselView: View {
+    @Binding var customColor: Color
     //minutesStood and data are placeholder data.
     let minutesStood = [30, 10, 20, 15, 40, 50, 15]
     var data = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
@@ -51,7 +54,7 @@ struct CarouselView: View {
 //                    x: .value("Shape Type", data[6]),
 //                    y: .value("Total Count", minutesStood[6])
 //                )
-            }.foregroundColor(.blue).font(.custom("Impact", size: 24))
+            }.foregroundColor(customColor).font(.custom("Impact", size: 24))
 Divider()
         }
         VStack{
@@ -95,8 +98,8 @@ struct MultiSelector<LabelView: View, Selectable: Identifiable & Hashable>: View
 }
 //
 
-struct GraphsView_Previews: PreviewProvider {
-    static var previews: some View {
-        CarouselView()
-    }
-}
+//struct GraphsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CarouselView(customColor: testColor)
+//    }
+//}

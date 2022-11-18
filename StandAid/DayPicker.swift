@@ -8,29 +8,30 @@
 import SwiftUI
 
 struct DayPicker: View {
-    @State var color = Color.blue
+    @Binding var customColor: Color
+
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 25, style: .continuous)
                            .fill(.black)
                            .frame(width: 380, height: 50)
-                                  //
+                                  
             HStack{
-                DayButton(buttonText: "s")
-                DayButton(buttonText: "m")
-                DayButton(buttonText: "t")
-                DayButton(buttonText: "w")
-                DayButton(buttonText: "t")
-                DayButton(buttonText: "f")
-                DayButton(buttonText: "s")
+                DayButton(customColor: $customColor, buttonText: "s")
+                DayButton(customColor: $customColor,buttonText: "m")
+                DayButton(customColor: $customColor,buttonText: "t")
+                DayButton(customColor: $customColor,buttonText: "w")
+                DayButton(customColor: $customColor,buttonText: "t")
+                DayButton(customColor: $customColor,buttonText: "f")
+                DayButton(customColor: $customColor,buttonText: "s")
             }
         }
         
     }
 }
 
-struct DayPicker_Previews: PreviewProvider {
-    static var previews: some View {
-        DayPicker()
-    }
-}
+//struct DayPicker_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DayPicker(color: $color)
+//    }
+//}
