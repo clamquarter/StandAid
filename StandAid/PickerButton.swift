@@ -7,12 +7,13 @@
 
 import SwiftUI
 
-struct PickerButton: View {
-    @Binding var customColor: Color
+struct PickerButton: Identifiable, View {
+    @State var customColor = Settings().customColor
     @State var daySelected = false
     // @State var colorLetterDay = Color.blue
     var buttonText = "s"
     var fontSize = 50
+    var id = UUID()
     var body: some View {
              Button ( action: {
                  daySelected.toggle()
@@ -28,18 +29,17 @@ struct PickerButton: View {
              {
 
                  if daySelected{
-                     Image(systemName: "\(buttonText).circle.fill").tint(customColor)
+                     Image(systemName: "\(buttonText).circle.fill").tint(Settings().customColor)
                          .font(.system(size: 35))
                 
                  }
                  else{
                      
-                     Image(systemName: "\(buttonText).circle").tint(customColor)
+                     Image(systemName: "\(buttonText).circle").tint(Settings().customColor)
                          .font(.system(size: 35))
                          
                      
                  }
-                 
                  
              }
              

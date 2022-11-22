@@ -10,23 +10,28 @@ import SwiftUI
 struct MultiPicker: View {
     @Binding var customColor: Color
 
+    
     var body: some View {
-        ZStack{
-            RoundedRectangle(cornerRadius: 25, style: .continuous)
-                           .fill(.black)
-                           .frame(width: 380, height: 50)
-                                  
-            HStack{
-                PickerButton(customColor: $customColor, buttonText: "s")
-                PickerButton(customColor: $customColor,buttonText: "m")
-                PickerButton(customColor: $customColor,buttonText: "t")
-                PickerButton(customColor: $customColor,buttonText: "w")
-                PickerButton(customColor: $customColor,buttonText: "t")
-                PickerButton(customColor: $customColor,buttonText: "f")
-                PickerButton(customColor: $customColor,buttonText: "s")
+        VStack{
+          
+            ZStack{
+                //RoundedRectangle(cornerRadius: 25, style: .continuous)
+                   // .fill(.black)
+                   // .frame(width: 380, height: 50)
+                dayPicker
+                    .foregroundColor(customColor)
             }
+            Divider()
+
+            ZStack{
+                //RoundedRectangle(cornerRadius: 25, style: .continuous)
+                    //.fill(.black)
+                   // .frame(width: 380, height: 50)
+                intervalPicker
+                    .foregroundColor(customColor)
+            }
+            
         }
-        
     }
 }
 

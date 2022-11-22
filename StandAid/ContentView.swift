@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var settings: Settings
+
     var body: some View {
+        
      HomeView()
         //The HomeView screen contains the navigation for the app
     }

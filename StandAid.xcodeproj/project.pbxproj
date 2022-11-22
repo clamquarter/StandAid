@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13B617C3292C2A1A00EE09E6 /* Pickers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B617C2292C2A1A00EE09E6 /* Pickers.swift */; };
 		13DBF0652922DE5D003F6803 /* StandAidApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DBF0642922DE5D003F6803 /* StandAidApp.swift */; };
 		13DBF0672922DE5D003F6803 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DBF0662922DE5D003F6803 /* ContentView.swift */; };
 		13DBF0692922DE5D003F6803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13DBF0682922DE5D003F6803 /* Assets.xcassets */; };
@@ -15,9 +16,12 @@
 		13DBF0752922E597003F6803 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DBF0742922E597003F6803 /* CarouselView.swift */; };
 		13DBF07929242131003F6803 /* MultiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DBF07829242131003F6803 /* MultiPicker.swift */; };
 		13DBF07B29243E16003F6803 /* PickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DBF07A29243E16003F6803 /* PickerButton.swift */; };
+		13DD3EB929280F9500305858 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD3EB829280F9400305858 /* Notifications.swift */; };
+		13DD3EBD2928243C00305858 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD3EBC2928243C00305858 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13B617C2292C2A1A00EE09E6 /* Pickers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pickers.swift; sourceTree = "<group>"; };
 		13DBF0612922DE5D003F6803 /* StandAid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StandAid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13DBF0642922DE5D003F6803 /* StandAidApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandAidApp.swift; sourceTree = "<group>"; };
 		13DBF0662922DE5D003F6803 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,6 +31,8 @@
 		13DBF0742922E597003F6803 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		13DBF07829242131003F6803 /* MultiPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPicker.swift; sourceTree = "<group>"; };
 		13DBF07A29243E16003F6803 /* PickerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerButton.swift; sourceTree = "<group>"; };
+		13DD3EB829280F9400305858 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		13DD3EBC2928243C00305858 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 		13DBF0632922DE5D003F6803 /* StandAid */ = {
 			isa = PBXGroup;
 			children = (
+				13B617C2292C2A1A00EE09E6 /* Pickers.swift */,
 				13DBF07A29243E16003F6803 /* PickerButton.swift */,
 				13DBF07829242131003F6803 /* MultiPicker.swift */,
 				13DBF0642922DE5D003F6803 /* StandAidApp.swift */,
@@ -67,6 +74,8 @@
 				13DBF06A2922DE5D003F6803 /* Preview Content */,
 				13DBF0722922E477003F6803 /* HomeView.swift */,
 				13DBF0742922E597003F6803 /* CarouselView.swift */,
+				13DD3EB829280F9400305858 /* Notifications.swift */,
+				13DD3EBC2928243C00305858 /* Settings.swift */,
 			);
 			path = StandAid;
 			sourceTree = "<group>";
@@ -150,9 +159,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				13DBF0672922DE5D003F6803 /* ContentView.swift in Sources */,
+				13DD3EB929280F9500305858 /* Notifications.swift in Sources */,
+				13DD3EBD2928243C00305858 /* Settings.swift in Sources */,
 				13DBF0652922DE5D003F6803 /* StandAidApp.swift in Sources */,
 				13DBF07929242131003F6803 /* MultiPicker.swift in Sources */,
 				13DBF0732922E477003F6803 /* HomeView.swift in Sources */,
+				13B617C3292C2A1A00EE09E6 /* Pickers.swift in Sources */,
 				13DBF07B29243E16003F6803 /* PickerButton.swift in Sources */,
 				13DBF0752922E597003F6803 /* CarouselView.swift in Sources */,
 			);
