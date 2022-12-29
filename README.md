@@ -1,9 +1,8 @@
 # StandAid
 
-StandAid is an app I worked on during challenge 2 at the Apple Developer Academy. It's for people who live sedentary lifestyles--so, just about everyone.
-
 <h3>Summary</h3>
-StandAid is designed to get the ball rolling on being active. It all starts with standing up, so StandAid allows the user to schedule custom reminders to get up, go outside, strech, etc. It is similar to a feature built into the Apple Watch, except it works without an Apple Watch and allows full customization.
+
+StandAid is an app I worked on during challenge 2 at the Apple Developer Academy. It's for people who live sedentary lifestyles--so, just about everyone. It all starts with standing up, so StandAid allows the user to schedule custom reminders to get up, go outside, strech, etc. It is similar to a feature built into the Apple Watch, except it works without an Apple Watch and allows full customization.
 
 <h3>What I Learned</h3>
 <ul>
